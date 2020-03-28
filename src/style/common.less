@@ -1,0 +1,301 @@
+@b_color_d9: #d9d9d9;
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.modal_not_cancel {
+  .ant-btn:first-child {
+    display: none
+  }
+}
+.text_log {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.layout_title {
+  color: #333;
+  font-size: 16px;
+}
+.none {
+  display: none;
+}
+.color_red{
+  color: red;
+}
+.color_green{
+  color: green;
+}
+.color_blue {
+  color: #1890ff;
+}
+.border_t_shadow {
+  border-top: 1px solid #ddd;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+}
+.border_b_shadow {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 1px 0px 4px rgba(0,0,0,0.3);
+}
+.fixedTopNotips {
+  position: absolute !important;
+}
+.icon_status_success {
+  color: #52c41a;
+}
+.icon_status_fail {
+  color: #f5222d;
+}
+.waiting_icon {
+  width: 20px;
+}
+.text_c {
+  text-align: center;
+}
+.text_r {
+  text-align: right;
+}
+.ws_btn1 {
+  margin-right: 10px;
+}
+.title_underline {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: 100% !important;
+}
+.overflow_oneline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.min_h_100vh {
+  min-height: 100vh;
+}
+.demo_center_sping {
+  height: calc(100vh - 64px);
+}
+
+.color_444 {
+  color: #444;
+}
+.font_20 {
+  font-size: 20px;
+}
+.font_16 {
+  font-size: 16px;
+}
+.bg_white {
+  background: #fff;
+}
+.add_btn_page {
+  padding: 10px 0;
+}
+
+/* --- 动画 --- */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500%, 0);
+    transform: translate3d(0, -500%, 0);
+  }
+
+  95% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500%, 0);
+    transform: translate3d(0, -500%, 0);
+  }
+
+  95% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-14.28%, 0, 0);
+    transform: translate3d(-14.28%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-14.28%, 0, 0);
+    transform: translate3d(-14.28%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.error-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.log_list_container{
+  height: 400px;
+  overflow: scroll
+}
+.tab_mar_top {
+  margin-top: 15px;
+}
+
+// antd 全屏弹窗 样式覆盖
+.full_modal.ant-modal {
+  width: 100% !important;
+  height: 100%;
+  background: red;
+  left: 0;
+  top: 0;
+  padding-bottom: 0;
+
+  .ant-modal-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ant-modal-body {
+    width: 100%;
+    height: calc(100% - 110px);
+    box-sizing: border-box;
+  }
+
+  .ant-modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+// 自定义折叠面板
+.tabs_container {
+  .ant-tabs-bar {
+    margin: 0;
+  }
+
+  .ant-tabs-tab{
+    border-color: @b_color_d9 !important;
+  }
+
+  .ant-tabs-content {
+    padding: 15px;
+    border: 1px solid @b_color_d9;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+  }
+}
+
+.site-collapse-custom-collapse {
+  .site-collapse-custom-panel {
+    background: #f7f7f7;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    border: 0px;
+    overflow: hidden;
+  }
+
+  & > .ant-collapse-item {
+    border-bottom: none !important;
+  }
+}
+
+//  图片类算法不需要点线框时样式
+.algo_img_no_polygon {
+  .header {
+    padding: 15px 0;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    min-height: 64px;
+
+    .right {
+      font-size: 22px;
+      color: #ccc;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+
+      .tips {
+        font-size: 12px;
+      }
+    }
+  }
+  .no_data {
+    background: #f5f5f5;
+    height: 350px;
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ccc;
+      cursor: pointer;
+
+      i {
+        font-size: 25px;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: 350px;
+  }
+}
