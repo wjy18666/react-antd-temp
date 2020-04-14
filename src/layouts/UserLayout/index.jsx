@@ -3,6 +3,10 @@ import React from 'react';
 
 export default function UserLogin(props) {
   return (
-    <Layout>{props.children}</Layout>
+    <Layout>
+      <div>
+        {props.children}
+      </div>
+    </Layout>
   )
 }

@@ -36,7 +36,6 @@ const hasChildrenRender = (id, children, props, RouteComponent, route) => {
             {children.map((routeChild, idx) => {
               const { redirect, path: childPath, component, exact } = routeChild;
 
-              console.log('exact', exact)
               return RouteItem({
                 key: `${id}-${idx}`,
                 redirect,

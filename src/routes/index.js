@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: Jianyong Wang
+ * @Date: 2020-03-19 18:00:10
+ * @LastEditors: Jianyong Wang
+ * @LastEditTime: 2020-03-30 16:03:57
+ */
 import { lazy } from 'react';
 import UserLayout from '@/layouts/UserLayout'
 
@@ -37,7 +45,7 @@ const routerConfig = [
     name: 'home',
     path: "/home",
     component: Home,
-    requiresAuth: false
+    requiresAuth: true
   },
   {
     name: '首页',
