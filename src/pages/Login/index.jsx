@@ -5,6 +5,8 @@ import {
   //  request
 } from  '@/utils/request'
 import { userLogin } from '@/config/ajaxOpt'
+import './index.scss'
+import style from './login.module.scss'
 
 function Login() {
   let { loading, request } = useRequest(userLogin)
@@ -36,6 +38,8 @@ function Login() {
 
   return (
     <div>
+      <div className="login_color">登录界面</div>
+      <div className={style.login_text_color}>登录蓝色</div>
       <img
         width={100}
         height={75}

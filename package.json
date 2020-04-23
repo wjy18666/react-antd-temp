@@ -9,10 +9,9 @@
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "customize-cra": "^0.2.12",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
     "mocker-api": "^1.13.1",
     "mockjs": "^1.1.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-app-rewired": "^2.1.1",
@@ -20,6 +19,8 @@
     "react-hot-loader": "^4.12.18",
     "react-router-dom": "^5.0.1",
     "react-scripts": "2.1.8",
+    "sass-resources-loader": "^2.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack-build-notifier": "^2.0.0"
   },
   "scripts": {
