@@ -18,7 +18,7 @@
     "react-dom": "^16.8.4",
     "react-hot-loader": "^4.12.18",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "sass-resources-loader": "^2.0.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack-build-notifier": "^2.0.0"
